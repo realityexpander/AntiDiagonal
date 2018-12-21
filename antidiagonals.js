@@ -3,8 +3,14 @@ var a = [ [1, 2, 3],
           [4, 5, 6], 
           [7, 8, 9] ]
 
-// output: 1,2,4,3,5,7,6,8,9
+// output: [1,2,4,3,5,7,6,8,9]
 
+var b = [ [1,  2,  3,  4], 
+          [5,  6,  7,  8], 
+          [9,  10, 11, 12],
+          [13, 14, 15, 16] ]
+          
+// output: [1, 2, 5, 3, 6, 9, 4, 7, 10, 13, 8, 11, 14, 12, 15, 16]
 
 // --------------------------------------------------- SOLUTIONS BELOW ----------------------------
 
@@ -58,6 +64,6 @@ function antiDiagonal(a) {
   return res;
 }
 
-console.log(antiDiagonal1(a));
-console.log(antiDiagonal(a));
+console.log(antiDiagonal1(b));
+console.log(antiDiagonal(b));
 
